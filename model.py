@@ -305,7 +305,7 @@ class MODEL(nn.Module):
                     # Create model name
                     model_name = 'forecast_' + str(epoch + 1) + '_' + \
                         str(validation_loss) + '_' + \
-                            str(datetime.datetime.now()) + '.model'
+                            str(datetime.datetime.now()) + '.pth'
 
                     # Prepare model with metadata
                     checkpoint = {'epoch': epoch + 1, \
